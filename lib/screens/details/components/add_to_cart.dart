@@ -6,8 +6,8 @@ import '../../../constants.dart';
 
 class AddToCart extends StatelessWidget {
   const AddToCart({
-    Key key,
-    @required this.product,
+    Key? key,
+    required this.product,
   }) : super(key: key);
 
   final Product product;
@@ -39,10 +39,10 @@ class AddToCart extends StatelessWidget {
           Expanded(
             child: SizedBox(
               height: 50,
-              child: FlatButton(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(18)),
-                color: product.color,
+              child: TextButton(
+                // shape: RoundedRectangleBorder(
+                //     borderRadius: BorderRadius.circular(18)),
+                // color: product.color,
                 onPressed: () {},
                 child: Text(
                   "Buy  Now".toUpperCase(),

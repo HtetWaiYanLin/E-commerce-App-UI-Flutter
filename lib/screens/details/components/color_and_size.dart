@@ -5,8 +5,8 @@ import '../../../constants.dart';
 
 class ColorAndSize extends StatelessWidget {
   const ColorAndSize({
-    Key key,
-    @required this.product,
+    Key? key,
+    required this.product,
   }) : super(key: key);
 
   final Product product;
@@ -41,10 +41,10 @@ class ColorAndSize extends StatelessWidget {
                 TextSpan(text: "Size\n"),
                 TextSpan(
                   text: "${product.size} cm",
-                  style: Theme.of(context)
-                      .textTheme
-                      .headline5
-                      .copyWith(fontWeight: FontWeight.bold),
+                  // style: Theme.of(context)
+                  //     .textTheme
+                  //     .headline5
+                  //     .copyWith(fontWeight: FontWeight.bold),
                 )
               ],
             ),
@@ -59,8 +59,8 @@ class ColorDot extends StatelessWidget {
   final Color color;
   final bool isSelected;
   const ColorDot({
-    Key key,
-    this.color,
+    Key? key,
+    required this.color,
     // by default isSelected is false
     this.isSelected = false,
   }) : super(key: key);
